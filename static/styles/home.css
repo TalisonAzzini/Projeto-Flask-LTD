@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgba(255, 205, 255, 0.88);
+}
+
+.envolve-tudo{
+    display: flex;
+    height: 100vh;
+}
+
+.menu-lateral{
+    background-color: #A33EDB;
+    height: 100%;
+    width: 8vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF0FF;
+}
+
+.logo-menu{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.icones-container{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+    /* Na linha abaixo possui uma gambiarra, favor não mexer */
+    margin-bottom: 80px; 
+}
+
+.icones-container a{
+    color: #FFF0FF;
+    text-decoration: none;
+}
+
+.icones{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icones img{
+    width: 30px;
+    height: 30px;
+}
+
+.container-main-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    justify-content: space-around;
+    margin: 0 auto;
+    /* border: 1px solid orange; */
+}
+
+.container-topo{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    /* height: 100%; */
+    padding: 30px;
+}
+
+.topo-pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.topo-pesquisa h2{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.box-pesquisa{
+    background-color: #A33EDB;
+    padding: 30px;
+    border-radius: 45px;
+    color: #FFF0FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 500px;
+    box-shadow: -7px 7px 10px #430A71;
+}
+
+.box-pesquisa h2{
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+}
+
+.input-pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+.input-pesquisa img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-pesquisa input{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    color: #464646;
+    width: 370px;
+    height: 55px;
+    font-weight: bold;
+    outline: none;
+}
+
+::-webkit-input-placeholder { 
+    color: rgba(173, 173, 173, 0.9);
+ }
+
+.topo-img{
+    width: 300px;
+    height: 300px;
+}
+
+.topo-img img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container-sobre{
+    width: 500px;
+    border: 2px solid #430A71;
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+    width: 70vw;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.sobre-img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.background-pink{
+    background-color: #FC67C5;
+    border-radius: 50%;
+    padding: 90px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sobre-img img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    /* z-index: 1; */
+}
+
+.sobre-texto h2{
+    font-weight: normal;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sobre-texto p{
+    width: 550px;
+    font-size: 17px;
+}

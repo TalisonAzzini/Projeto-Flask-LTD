@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iolanda Search</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico')}}" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(130deg,rgba(81,112,255,1) 35%, rgba(255,102,196,1) 68%);
+
+        }
+        .tela-login{
+            background-color: rgba(255, 205, 255, 0.4);
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 25px;
+            color: white;
+            box-shadow: 10px 10px 10px rgb(67, 10, 113);
+            width: 25%;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: rgba(31, 29, 29, 0.856);
+            background-color: rgba(255, 240, 255, 0.9);
+        }
+        button{
+            background-color: rgb(252, 103, 197);
+            border: none;
+            padding: 15px;
+            width: 30%;
+            border-radius: 20px;
+            color: rgb(255, 240, 255);
+            font-size: 15px;
+            position: absolute;
+            left: 36%;
+        }
+        button:hover{
+            background-color: rgba(81,112,255,1);
+            cursor: pointer;
+        }
+        button a{
+            color: rgb(255, 240, 255);
+            text-decoration: none;
+        }
+        label{
+            color: rgb(67, 10, 113);
+        }
+        ::-webkit-input-placeholder { 
+            color: rgba(173, 173, 173, 0.9);
+        }
+        img{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 540px;
+            left: 48.5%;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 5px 5px 5px  rgb(67, 10, 113);;
+        }
+        .lista{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" class="tela-login">
+        <h1>Login</h1>
+        <br>
+        <label for="login">E-mail</label>
+        <br><br>
+        <input type="text" name="login" id="login" placeholder="E-mail" required/>
+        <br><br>
+        <label for="senha">Senha</label>
+        <br><br>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required/>
+        <br><br><br>
+        <button type="submit" value="Entrar">Enviar</button>
+    </form>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <img src="{{ url_for('static', filename='imgs/logo_colorida.png')}}">
+</body>
+</html>

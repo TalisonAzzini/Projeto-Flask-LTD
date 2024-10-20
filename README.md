@@ -1,0 +1,2 @@
+# LTD-IolandaSearch
+ Projeto realizado junto à matéria extensionista "Laboratório de Transformação Digital" durante a graduação, com objetivo de desenvolver uma aplicação completa que pesquisa e devolve o resultado com base nos melhores preços.

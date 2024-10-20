@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iolanda Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico')}}" type="image/x-icon">
+</head>
+<body>
+    <div class="envolve-tudo">
+        <div class="menu-lateral" id="home">
+            <img src="{{ url_for('static', filename='imgs/logo_colorida.png')}}" class="logo-menu" alt="Logo principal">
+            <div class="icones-container">
+                <a href="#home">
+                    <div class="icones">
+                        <img src="{{ url_for('static', filename='imgs/home-svg.png')}}" alt="">
+                        <p>Home</p>
+                    </div>
+                </a>
+        
+                <a href="#sobre">
+                    <div class="icones">
+                        <img src="{{ url_for('static', filename='imgs/sobre-svg.png')}}" alt="">
+                        <p>Sobre</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="container-main-conteudo">
+            <div class="container-topo">
+                <div class="topo-pesquisa">
+                    <h2>Pesquisa de Produtos</h2>
+                    <div class="box-pesquisa">
+                        <h2>Seja bem-vindo, {{name}}! </h2>
+                        <p>O que deseja comparar hoje?</p>
+                        <div class="input-pesquisa">
+                            <input type="text" placeholder="Pesquisar">
+                            <a href="../templates/pesquisa.html">
+                                <img src="{{ url_for('static', filename='imgs/lupa-svg.png')}}"  alt="Ícone de lupa">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topo-img">
+                    <img src="{{ url_for('static', filename='imgs/Iolanda.jpeg')}}" alt="">
+                </div>
+            </div>
+
+            <div class="container-sobre" id="sobre">
+                <div class="sobre-img">
+                    <div class="background-pink"></div>
+                    <img src="{{ url_for('static', filename='imgs/Iolanda.jpeg')}}" alt="">
+                </div>
+                <div class="sobre-texto">
+                    <h2>Quem somos?</h2>
+                    <p>Nossa plataforma foi desenvolvida para facilitar a comparação de preços entre diferentes fornecedores, ajudando sua empresa a encontrar as melhores ofertas. Nossa prioridade é oferecer praticidade e precisão para que você economize tempo e dinheiro.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
